@@ -2,7 +2,6 @@ using UnityEngine;
 using System;
 using System.Collections.Generic;
 using System.Collections;
-using Sirenix.OdinInspector;
 
 
 namespace _mrstruijk.Components.Localisation.Scripts.AudioLocaliser
@@ -68,7 +67,6 @@ namespace _mrstruijk.Components.Localisation.Scripts.AudioLocaliser
 		}
 
 
-		[Button]
 		public void PlayMultipleClips()
 		{
 			playMultipleClips ??= StartCoroutine(PlayMultipleClipsCR());

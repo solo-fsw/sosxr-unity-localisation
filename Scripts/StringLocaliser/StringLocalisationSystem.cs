@@ -11,14 +11,12 @@ namespace _mrstruijk.Components.Localisation
 	/// </summary>
 	public class StringLocalisationSystem
 	{
-
 		private static Dictionary<string, string> localisedNL;
 		private static Dictionary<string, string> localisedEN; // Add other languages here
 
 		private static bool isInit;
 
 		private static CSVLoader csvLoader;
-
 
 
 
@@ -132,7 +130,5 @@ namespace _mrstruijk.Components.Localisation
 		{
 			csvLoader ??= new CSVLoader();
 		}
-
-
 	}
 }
