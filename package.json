@@ -5,7 +5,12 @@
   "description": "This is an implementation of GameDevGuide's Localisation",
   "documentationUrl": "https://www.youtube.com/watch?v=c-dzg4M20wY&t=371s",
   "unity": "2021.1",
-  "author": {
+  "dependencies":
+  {
+    "com.unity.textmeshpro": "3.0.6"
+  },
+  "author":
+  {
     "name": "Maarten R. Struijk Wilbrink",
     "email": "m.r.struijk@fsw.leidenuniv.nl",
     "url": "https://www.youtube.com/watch?v=c-dzg4M20wY&t=371s"
