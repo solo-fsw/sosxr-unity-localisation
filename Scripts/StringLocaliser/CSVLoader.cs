@@ -25,7 +25,7 @@ namespace _mrstruijk.Components.Localisation
 		private const char surround = '"';
 		private readonly string[] fieldSeperator = {"\",\""};
 		private const string fileName = "localisation";
-		private const string filePath = "Assets/_mrstruijk/Components/Localisation/Resources/";
+		private const string filePath = "Assets/_mrstruijk/Components/_Packages/Localisation/Resources/";
 		private bool csvLoaded;
 
 
