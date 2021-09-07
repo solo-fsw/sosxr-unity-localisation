@@ -1,0 +1,13 @@
+{
+  "name": "com.mrstruijk.localisation",
+  "version": "0.0.1-preview.1",
+  "displayName": "Localisation",
+  "description": "This is an implementation of GameDevGuide's Localisation",
+  "documentationUrl": "https://www.youtube.com/watch?v=c-dzg4M20wY&t=371s",
+  "unity": "2021.1",
+  "author": {
+    "name": "Maarten R. Struijk Wilbrink",
+    "email": "m.r.struijk@fsw.leidenuniv.nl",
+    "url": "https://www.youtube.com/watch?v=c-dzg4M20wY&t=371s"
+  }
+}
