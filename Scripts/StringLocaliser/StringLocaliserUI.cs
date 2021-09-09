@@ -9,7 +9,7 @@ namespace _mrstruijk.Components.Localisation
 	/// https://youtu.be/c-dzg4M20wY
 	/// https://youtu.be/E-PR0d0Jb5A
 	/// </summary>
-	[RequireComponent(typeof(TextMeshProUGUI))]
+	[ExecuteAlways]
 	public class StringLocaliserUI : MonoBehaviour
 	{
 		private TextMeshProUGUI textField;
@@ -19,6 +19,11 @@ namespace _mrstruijk.Components.Localisation
 		private void Awake()
 		{
 			textField = GetComponent<TextMeshProUGUI>();
+
+			if (textField == null)
+			{
+				textField = GetComponentInChildren<TextMeshProUGUI>();
+			}
 		}
 
 
@@ -37,6 +42,12 @@ namespace _mrstruijk.Components.Localisation
 
 		private void UpdateLocalisedTextValue()
 		{
+			if (!textField)
+			{
+				Debug.LogFormat("Couldn't find TextMeshProUGUI on {0}, or it's children", this.name);
+				return;
+			}
+
 			textField.text = localisedString.value;
 		}
 
