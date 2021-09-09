@@ -12,13 +12,17 @@ namespace _mrstruijk.Components.Localisation
 	[ExecuteAlways]
 	public class StringLocaliserUI : MonoBehaviour
 	{
-		private TextMeshProUGUI textField;
+		[Tooltip("Need only specify if TMProUGUI not on this GO, nor it's direct child, or if there can be a conflict between multiple TMProUGUIs")]
+		[SerializeField] private TextMeshProUGUI textField;
 		public StringLocalised localisedString;
 
 
 		private void Awake()
 		{
-			textField = GetComponent<TextMeshProUGUI>();
+			if (textField == null)
+			{
+				textField = GetComponent<TextMeshProUGUI>();
+			}
 
 			if (textField == null)
 			{

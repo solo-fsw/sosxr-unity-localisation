@@ -1,10 +1,9 @@
 "key","nl","en"
 
-"hello","Hallo!","Hello!"
 "tamper_scale","Verander schaal","Change scale"
 "tamper_position","Verander positie","Change position"
-"dutch","Nederlands","Dutch"
-"english","Engels","English"
+"language_dutch","Nederlands","Dutch"
+"language_english","Engels","English"
 "Lobby","Lobby","Lobby"
 "1. Standard","Standaard","Standard"
 "2. Dark","Donker","Dark"
@@ -13,7 +12,6 @@
 "master_become","Wordt Master","Become Master"
 "master_are","Dit is Master Client","This is Master Client"
 "leave_room","Verbreek connectie","Stop connection"
-"save","Sla op","Save"
 "enter_savename","Voer bestandsnaam in...","Enter file name..."
-
-"button_undefined","Ongedefinieerde knop",""
+"button_undefined","Ongedefinieerd","Undefined button"
+"button_save","Sla op","Save"
