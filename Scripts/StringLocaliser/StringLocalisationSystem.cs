@@ -54,7 +54,15 @@ namespace _mrstruijk.Components.Localisation
 			localisedNL = csvLoader.GetDictionaryValues("nl");
 			localisedEN = csvLoader.GetDictionaryValues("en"); // Add other languages here
 
+			RefreshEditorAssetDatabase();
+		}
+
+
+		private static void RefreshEditorAssetDatabase()
+		{
+			#if UNITY_EDITOR
 			UnityEditor.AssetDatabase.Refresh();
+			#endif
 		}
 
 
@@ -82,7 +90,7 @@ namespace _mrstruijk.Components.Localisation
 			return value;
 		}
 
-
+		#if UNITY_EDITOR
 		public static void Add(string key, string value)
 		{
 			if (GetLocalisedValue(key) != null)
@@ -130,5 +138,6 @@ namespace _mrstruijk.Components.Localisation
 		{
 			csvLoader ??= new CSVLoader();
 		}
+		#endif
 	}
 }

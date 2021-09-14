@@ -1,0 +1,18 @@
+{
+    "name": "mrstruijk.Localisation.Editor",
+    "rootNamespace": "",
+    "references": [
+        "GUID:4f3ac366e5567478a91313fbd7bbabfe"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
