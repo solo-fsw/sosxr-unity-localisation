@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Collections;
 
 
-namespace _mrstruijk.Components.Localisation.Scripts.AudioLocaliser
+namespace _mrstruijk.Localisation
 {
 	[RequireComponent(typeof(AudioSource))]
 	public class AudioLocaliser : MonoBehaviour

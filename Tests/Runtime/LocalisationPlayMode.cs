@@ -1,6 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
-using _mrstruijk.Components.Localisation;
+using _mrstruijk.Localisation;
 using NUnit.Framework;
 using UnityEngine;
 using UnityEngine.TestTools;

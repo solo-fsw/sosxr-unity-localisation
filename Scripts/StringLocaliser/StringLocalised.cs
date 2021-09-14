@@ -1,4 +1,4 @@
-namespace _mrstruijk.Components.Localisation
+namespace _mrstruijk.Localisation
 {
 	[System.Serializable]
 	public struct StringLocalised

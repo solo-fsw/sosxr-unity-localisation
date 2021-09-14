@@ -2,7 +2,7 @@ using UnityEditor;
 using UnityEngine;
 
 
-namespace _mrstruijk.Components.Localisation.Editor
+namespace _mrstruijk.Localisation.Editor
 {
 	[CustomPropertyDrawer(typeof(StringLocalised))]
 	public class LocalisedStringDrawer : PropertyDrawer

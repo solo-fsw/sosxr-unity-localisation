@@ -2,7 +2,7 @@ using System;
 using UnityEngine;
 
 
-namespace _mrstruijk.Components.Localisation
+namespace _mrstruijk.Localisation
 {
 	public static class Language
 	{
@@ -22,7 +22,6 @@ namespace _mrstruijk.Components.Localisation
         		InvokeLanguageChangedAction();
         	}
         }
-
 
 		public static Action languageChanged;
 

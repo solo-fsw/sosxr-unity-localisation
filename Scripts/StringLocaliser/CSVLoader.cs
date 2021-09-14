@@ -6,7 +6,7 @@ using System.Text.RegularExpressions;
 using UnityEngine;
 
 
-namespace _mrstruijk.Components.Localisation
+namespace _mrstruijk.Localisation
 {
 	/// <summary>
 	/// From: GameDevGuide

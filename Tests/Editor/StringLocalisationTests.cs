@@ -1,4 +1,4 @@
-using _mrstruijk.Components.Localisation;
+using _mrstruijk.Localisation;
 using NUnit.Framework;
 using UnityEngine;
 

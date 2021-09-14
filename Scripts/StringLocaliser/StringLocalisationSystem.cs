@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 
 
-namespace _mrstruijk.Components.Localisation
+namespace _mrstruijk.Localisation
 {
 	/// <summary>
 	/// From: GameDevGuide
