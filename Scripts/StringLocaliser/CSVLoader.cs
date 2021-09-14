@@ -15,18 +15,20 @@ namespace _mrstruijk.Localisation
 	/// </summary>
 	public class CSVLoader
 	{
-		public TextAsset CSVFile
-		{
-			get;
-			private set;
-		}
-
 		private readonly char lineSeperator = '\n';
 		private const char surround = '"';
 		private readonly string[] fieldSeperator = {"\",\""};
 		private const string fileName = "localisation";
 		private const string filePath = "Assets/_mrstruijk/Components/_Packages/Localisation/Resources/";
+		private const string parserPattern = ",(?=(?:[^\"]*\"[^\"]*\")*(?![^\"]*\"))";
 		private bool csvLoaded;
+
+
+		public TextAsset CSVFile
+		{
+			get;
+			private set;
+		}
 
 
 		public CSVLoader()
@@ -66,7 +68,7 @@ namespace _mrstruijk.Localisation
 				}
 			}
 
-			var CSVParser = new Regex(",(?=(?:[^\"]*\"[^\"]*\")*(?![^\"]*\"))");
+			var CSVParser = new Regex(parserPattern);
 
 			for (int i = 1; i < lines.Length; i++)
 			{

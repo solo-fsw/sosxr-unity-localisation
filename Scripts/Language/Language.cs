@@ -13,6 +13,7 @@ namespace _mrstruijk.Localisation
         }
 
         private static Lang _language = Lang.NL;
+
         public static Lang language
         {
         	get => _language;

@@ -9,7 +9,7 @@ namespace _mrstruijk.Localisation
 	/// https://youtu.be/c-dzg4M20wY
 	/// https://youtu.be/E-PR0d0Jb5A
 	/// </summary>
-	public class StringLocalisationSystem
+	public static class StringLocalisationSystem
 	{
 		private static Dictionary<string, string> localisedNL;
 		private static Dictionary<string, string> localisedEN; // Add other languages here
@@ -89,6 +89,7 @@ namespace _mrstruijk.Localisation
 
 			return value;
 		}
+
 
 		#if UNITY_EDITOR
 		public static void Add(string key, string value)
