@@ -2,6 +2,7 @@ using UnityEngine;
 using System;
 using System.Collections.Generic;
 using System.Collections;
+using mrstruijk.Events;
 
 
 namespace _mrstruijk.Localisation
@@ -28,7 +29,7 @@ namespace _mrstruijk.Localisation
 
 		private void OnEnable()
 		{
-			Language.languageChanged += ChangeLanguage;
+			EventSystem.LanguageHasBeenChanged += ChangeLanguage;
 		}
 
 
@@ -97,7 +98,7 @@ namespace _mrstruijk.Localisation
 
 		private void OnDisable()
 		{
-			Language.languageChanged -= ChangeLanguage;
+			EventSystem.LanguageHasBeenChanged -= ChangeLanguage;
 			StopAllCoroutines();
 		}
 	}

@@ -1,4 +1,5 @@
 using System;
+using mrstruijk.Events;
 using UnityEngine;
 
 
@@ -24,8 +25,6 @@ namespace _mrstruijk.Localisation
         	}
         }
 
-		public static Action languageChanged;
-
 		private static void InvokeLanguageChangedAction()
 		{
 			if (!Application.isPlaying)
@@ -33,7 +32,7 @@ namespace _mrstruijk.Localisation
 				return;
 			}
 
-			languageChanged?.Invoke();
+			EventSystem.LanguageHasBeenChanged?.Invoke();
 		}
 	}
 }
