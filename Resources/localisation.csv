@@ -9,6 +9,7 @@
 "2. Dark","Donker","Dark"
 "3. Living Room","Woonkamer","Living Room"
 "4. Night","Nacht","Night"
+"FantasyForest","Fantasie Bos","Fantasy Forest"
 "master_become","Wordt Master","Become Master"
 "master_are","Dit is Master Client","This is Master Client"
 "leave_room","Verbreek connectie","Stop connection"
@@ -16,3 +17,4 @@
 "button_undefined","Ongedefinieerd","Undefined button"
 "button_save","Sla op","Save"
 "enter_groupname","Voer cliënt naam in", "Enter client name"
+
