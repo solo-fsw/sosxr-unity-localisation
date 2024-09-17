@@ -1,14 +1,13 @@
 using System.Collections;
-using System.Collections.Generic;
-using _mrstruijk.Components.Localisation;
 using NUnit.Framework;
-using UnityEngine;
 using UnityEngine.TestTools;
+
 
 public class LocalisationPlayMode
 {
-    private string key = "test";
-    private string value = "NLTestValue";
+    private string _key = "test";
+    private string _value = "NLTestValue";
+
 
     [UnityTest]
     public IEnumerator LocalisationPlayModeWithEnumeratorPasses()
@@ -20,6 +19,5 @@ public class LocalisationPlayMode
     [TearDown]
     public void AfterEveryTest()
     {
-
     }
 }

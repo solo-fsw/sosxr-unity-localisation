@@ -1,18 +1,16 @@
 {
-  "name": "com.mrstruijk.localisation",
-  "version": "0.0.1-preview.1",
+  "name": "com.sosxr.localisation",
+  "version": "1.0.2",
   "displayName": "Localisation",
   "description": "This is an implementation of GameDevGuide's Localisation",
   "documentationUrl": "https://www.youtube.com/watch?v=c-dzg4M20wY&t=371s",
   "unity": "2021.1",
-  "dependencies":
-  {
+  "dependencies": {
     "com.unity.textmeshpro": "3.0.6"
   },
-  "author":
-  {
+  "author": {
     "name": "Maarten R. Struijk Wilbrink",
-    "email": "m.r.struijk@fsw.leidenuniv.nl",
+    "email": "sosxr@fsw.leidenuniv.nl",
     "url": "https://www.youtube.com/watch?v=c-dzg4M20wY&t=371s"
   }
 }

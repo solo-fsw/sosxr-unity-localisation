@@ -1,29 +1,31 @@
-using _mrstruijk.Components.Localisation;
 using NUnit.Framework;
+using SOSXR.Localiser;
 using UnityEngine;
 
 
 public class CSVLoaderTests
 {
-    private CSVLoader loader;
+    private CSVLoader _loader;
+
 
     [SetUp]
     public void BeforeEveryTest()
     {
-        loader = new CSVLoader();
+        _loader = new CSVLoader();
     }
+
 
     [Test]
     public void CanLoadCSVLocalisationFile()
     {
-        Assert.IsNotNull(loader.CSVFile);
+        Assert.IsNotNull(_loader.CSVFile);
     }
 
 
     [Test]
     public void CanGetDutchDictionaryValues()
     {
-        var dict = loader.GetDictionaryValues("nl");
+        var dict = _loader.GetDictionaryValues("nl");
         Assert.IsNotNull(dict);
     }
 
@@ -31,7 +33,7 @@ public class CSVLoaderTests
     [Test]
     public void CanGetEnglishDictionaryValues()
     {
-        var dict = loader.GetDictionaryValues("en");
+        var dict = _loader.GetDictionaryValues("en");
         Assert.IsNotNull(dict);
     }
 
@@ -39,21 +41,21 @@ public class CSVLoaderTests
     [TearDown]
     public void AfterEveryTest()
     {
-        loader = null;
+        _loader = null;
     }
 }
 
 
 public class StringLocalisationSystemTests
 {
-    private string key = "test";
-    private string value = "NLTestValue";
+    private readonly string key = "test";
+    private readonly string value = "NLTestValue";
 
 
     [SetUp]
     public void BeforeEveryTest()
     {
-        Language.language = Language.Lang.NL;
+        Language.ChosenLanguage = Language.Lang.NL;
     }
 
 
@@ -63,6 +65,7 @@ public class StringLocalisationSystemTests
         StringLocalisationSystem.Add(key, value);
         Assert.AreEqual(StringLocalisationSystem.GetLocalisedValue(key), value);
     }
+
 
     [Test]
     public void CanRemoveFromLocalisationSystem()
@@ -95,7 +98,7 @@ public class StringLocalisationSystemTests
     [TearDown]
     public void AfterEveryTest()
     {
-        int counter = 0;
+        var counter = 0;
 
         while (StringLocalisationSystem.GetLocalisedValue(key) != null)
         {
@@ -105,6 +108,7 @@ public class StringLocalisationSystemTests
             if (counter > 10)
             {
                 Debug.LogError("Was unable to remove al instances of keys. Check Localisation file manually!");
+
                 break;
             }
         }
