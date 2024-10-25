@@ -53,8 +53,9 @@ namespace SOSXR.Localiser
         {
             _localisedNL = _csvLoader.GetDictionaryValues("nl");
             _localisedEN = _csvLoader.GetDictionaryValues("en"); // Add other languages here
-
+            #if UNITY_EDITOR
             AssetDatabase.Refresh();
+            #endif
         }
 
 
@@ -96,7 +97,9 @@ namespace SOSXR.Localiser
 
             CheckForCSVLoader();
 
+            #if UNITY_EDITOR
             _csvLoader.Add(key, value);
+            #endif
 
             UpdateDictionaries();
         }
@@ -112,8 +115,10 @@ namespace SOSXR.Localiser
         public static void Remove(string key)
         {
             CheckForCSVLoader();
-
+            
+            #if UNITY_EDITOR
             _csvLoader.Remove(key);
+            #endif
 
             UpdateDictionaries();
         }
