@@ -115,7 +115,7 @@ namespace SOSXR.Localiser
         public static void Remove(string key)
         {
             CheckForCSVLoader();
-            
+
             #if UNITY_EDITOR
             _csvLoader.Remove(key);
             #endif
