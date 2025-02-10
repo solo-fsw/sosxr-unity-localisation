@@ -8,6 +8,13 @@
   "dependencies": {
     "com.unity.textmeshpro": "3.0.6"
   },
+  "samples": [
+    {
+      "displayName": "Samples",
+      "description": "Contains samples of this package",
+      "path": "Samples~/Samples"
+    }
+  ],
   "author": {
     "name": "SOSXR",
     "email": "sosxr@fsw.leidenuniv.nl",
